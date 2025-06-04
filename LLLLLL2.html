@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flower Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.nav-links a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  background-color: #333;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background-image: url('https://images.unsplash.com/photo-1508976378723-9ba5e0e04a47?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+
+
+
+    <nav class="navbar">
+      <div class="logo">🌸 FlowerShop</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#shop">Shop ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Bouquets</a></li>
+            <li><a href="#">Roses</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Sympathy</a></li>
+			<!-- Shop Section -->
+<section id="shop" style="padding: 60px 30px; background-color: #f7f7f7;">
+  <h2>Our Shop</h2>
+  <p>Explore our wide selection of flowers for every occasion. Whether you're celebrating love, life, or memories — we have something beautiful for you.</p>
+  <ul>
+    <li>Bouquets</li>
+    <li>Roses</li>
+    <li>Birthday Arrangements</li>
+    <li>Sympathy Flowers</li>
+  </ul>
+</section>
+          </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+
+
+<!-- About Section -->
+<section id="about" style="padding: 60px 30px; background-color: #f0f0f0;">
+  <h2>About Us</h2>
+  <p>At FlowerShop, we believe in the joy that flowers bring. We’ve been delivering happiness with fresh floral arrangements since 2010.</p>
+</section>
+
+        <li><a href="#contact">Contact</a></li>
+	
+<!-- Contact Section -->
+<section id="contact" style="padding: 60px 30px; background-color: #f0f0f0;">
+  <h2>Contact Us</h2>
+  <p>We'd love to hear from you! Whether you have a question, comment, or just want to say hello, please reach out.</p>
+  <ul>
+    <li>Email: contact@flowershop.com</li>
+    <li>Phone: +885 70636971</li>
+    <li>Location: CCV NGS-pl</li>
+  </ul>
+</section>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Fresh Flowers Delivered</h1>
+      <p>Brighten someone's day with a beautiful bouquet</p>
+    </div>
+
+  </section>
+	<img src="F.JPG" alt="FLOWER">
+ 
+
+</body>
+</html>
